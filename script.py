@@ -9,10 +9,12 @@ class Test:
     def _attack_(attack):
         print(attack,"のダメージを与えた!")
 class monster:
-    def __init__(self,attack,name,block):
+    def __init__(self,hp,attack,name):
         self.attack = attack;
         self.name = name;
-        self.block = block;
+        self.hp = hp;
     def _defens_(defens):
-        pass
+        hp -= player.attack
 player = Test(3,{playername},2,10)
+gobrin = monster(5,5,"gobrin")
+gigarosh = monster()
