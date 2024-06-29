@@ -8,6 +8,7 @@ class Test:
         self.mp = mp;
     def _attack_(attack):
         print(attack,"のダメージを与えた!")
+        hp -= attack
         
     def _defens_(damege):
         print("{damege}のダメージを受けた！")
@@ -18,8 +19,6 @@ class monster:
         self.hp = hp;
     def _defens_(damege):
         hp -= player.attack
-    def _attack_(attack):
-        player.hp -= attack
 player = Test(3,{playername},2,10)
 gobrin = monster(5,5,"gobrin")
 gigarosh = monster()
