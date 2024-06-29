@@ -8,8 +8,8 @@ class Test:
         self.mp = mp;
     def _attack_(attack):
         print(attack,"のダメージを与えた!")
-        monster._defens_()
-    def _defens_(damege):
+        
+        def _defens_(damege):
         print({damege}のダメージを受けた！)
 class monster:
     def __init__(self,hp,attack,name):
