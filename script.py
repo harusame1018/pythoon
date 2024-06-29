@@ -8,12 +8,16 @@ class Test:
         self.mp = mp;
     def _attack_(attack):
         print(attack,"のダメージを与えた!")
+        hp -= attack
+        
+    def _defens_(damege):
+        print("{damege}のダメージを受けた！")
 class monster:
     def __init__(self,hp,attack,name):
         self.attack = attack;
         self.name = name;
         self.hp = hp;
-    def _defens_(defens):
+    def _defens_(damege):
         hp -= player.attack
 player = Test(3,{playername},2,10)
 gobrin = monster(5,5,"gobrin")
